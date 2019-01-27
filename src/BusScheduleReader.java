@@ -20,7 +20,14 @@ public class BusScheduleReader {
 		ra.setRegex(Scheduleregex);
 		run(ra);
 	}
-		
+		    /* run() method reads the user input and pass that as an argument to getUserPrefferedSchedule in which 
+			* the url will be parsed using ra (regex object) and will be displayed
+			* Then user input will be passe to printRoute() method in which using ra object different url will be parsed tp get the route 
+			* for specific route number
+			*/
+	
+			
+			
 		public void run(RegexAPI ra) throws IOException {
 			Scanner reader = new Scanner(System.in);  // Reading from System.in
 			
@@ -33,7 +40,10 @@ public class BusScheduleReader {
 			printRoute(ra, routeNumber);
 			}
 		
-		
+			/*
+			 * url will be created by adding the route number to the end of 'routeUrl'
+			 * it will be parsed using ra object and the user input will be searched for
+			 */
 		private void printRoute(RegexAPI ra, String routeNumber) throws IOException {
 			routeUrl = routeUrl+routeNumber; // Concatenating the URL
 			String busLine="";
@@ -41,10 +51,10 @@ public class BusScheduleReader {
 	    	Pattern pattern = Pattern.compile(routeRegex);
 	        Matcher matcher = pattern.matcher(ra.parseTheLink(routeUrl));
 	    	
-	    	while(matcher.find()) {
+	    	while(matcher.find()) {    				
 	    		System.out.printf("Destination : %s\n",matcher.group(1));
 	    		destination= matcher.group(0);
-	    		Pattern destinationPattern = pattern.compile("\\s*<p>(.*)</p>");  
+	    		Pattern destinationPattern = pattern.compile("\\s*<p>(.*)</p>");  // finding set of stops inside each route number
 	    		Matcher busMatcher = destinationPattern.matcher(destination);
 	    		
 	    		int counter= 1;
