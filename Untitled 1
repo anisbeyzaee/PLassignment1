@@ -1,0 +1,32 @@
+<hr id="arlington" />
+            <h3>Arlington</h3>
+                <div class="row Community">
+                    <div class="col-xs-2">
+                        <strong><a href="/schedules/route/201-202">201/202</a></strong>
+                    </div>
+                    <div class="col-xs-9 col-xs-offset-1">Smokey Point to Lynnwood</div>
+                </div>
+                <div class="row Community">
+                    <div class="col-xs-2">
+                        <strong><a href="/schedules/route/220">220</a></strong>
+                    </div>
+                    <div class="col-xs-9 col-xs-offset-1">Arlington to Smokey Point</div>
+                </div>
+                <div class="row Community">
+                    <div class="col-xs-2">
+                        <strong><a href="/schedules/route/227">227 *</a></strong>
+                    </div>
+                    <div class="col-xs-9 col-xs-offset-1">Arlington to Boeing</div>
+                </div>
+                <div class="row Community">
+                    <div class="col-xs-2">
+                        <strong><a href="/schedules/route/230">230</a></strong>
+                    </div>
+                    <div class="col-xs-9 col-xs-offset-1">Darrington to Smokey Point</div>
+                </div>
+                <div class="row Community">
+                    <div class="col-xs-2">
+                        <strong><a href="/schedules/route/240">240</a></strong>
+                    </div>
+                    <div class="col-xs-9 col-xs-offset-1">Stanwood to Smokey Point</div>
+                </div>
